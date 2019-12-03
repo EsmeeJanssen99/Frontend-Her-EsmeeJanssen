@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96.617" height="16.21" viewBox="0 0 96.617 16.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #99268c;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #99268c;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_2_131" data-name="Symbol 2 – 131" transform="translate(-38.037 -557.55)">
+    <path id="Path_20" data-name="Path 20" class="cls-1" d="M636.138,139.262l-2.011,4.778h-5.108l3.933,3.751-2.171,5.274,5.358-3.151,5.059,3.151-1.969-5.274,4.5-3.751h-5.247Z" transform="translate(-589.733 419.495)"/>
+    <path id="Path_21" data-name="Path 21" class="cls-1" d="M636.138,139.262l-2.011,4.778h-5.108l3.933,3.751-2.171,5.274,5.358-3.151,5.059,3.151-1.969-5.274,4.5-3.751h-5.247Z" transform="translate(-569.914 419.495)"/>
+    <path id="Path_22" data-name="Path 22" class="cls-1" d="M636.138,139.262l-2.011,4.778h-5.108l3.933,3.751-2.171,5.274,5.358-3.151,5.059,3.151-1.969-5.274,4.5-3.751h-5.247Z" transform="translate(-550.095 419.495)"/>
+    <path id="Path_23" data-name="Path 23" class="cls-2" d="M636.138,139.262l-2.011,4.778h-5.108l3.933,3.751-2.171,5.274,5.358-3.151,5.059,3.151-1.969-5.274,4.5-3.751h-5.247Z" transform="translate(-530.277 419.495)"/>
+    <path id="Path_24" data-name="Path 24" class="cls-2" d="M636.138,139.262l-2.011,4.778h-5.108l3.933,3.751-2.171,5.274,5.358-3.151,5.059,3.151-1.969-5.274,4.5-3.751h-5.247Z" transform="translate(-510.458 419.495)"/>
+  </g>
+</svg>
