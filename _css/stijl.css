@@ -1,359 +1,401 @@
-@font-face {
-    src: url("../Fonts/MuseoSans_500.ttf");
-    font-family: "museosans";
-}
+ @font-face {
+     src: url("../Fonts/MuseoSans_500.ttf");
+     font-family: 'museosans';
+ }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5em;
-    margin-top: 2em;
-}
+ main {
+     display: grid;
+     margin-top: 2em;
+ }
 
-@media(min-width:35em) {
-    main {
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2em;
+ @media(min-width:35em) {
+     main {
+         grid-template-columns: 1fr 1fr;
+         margin-top: 2em;
 
-    }
-}
+     }
+ }
 
-@media(min-width:70em) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 2em;
-        margin-bottom: 0em;
-    }
-}
+ @media(min-width:70em) {
+     main {
+         grid-template-columns: 1fr 1fr 1fr;
+         margin-top: 2em;
+         margin-bottom: 0em;
+     }
+ }
 
-header section {
-    background-image: url("../_img/noorderlicht.jpeg");
-    background-size: cover;
-    padding: 1.5em;
-    height: 2em;
-}
+ header section {
+     background-image: url("../_img/noorderlicht.jpeg");
+     background-size: cover;
+     padding: 1.5em;
+     height: 2em;
+ }
 
-nav {
-    list-style-type: none;
-    display: block;
-    color: #ffffff;
-}
+ nav {
+     list-style-type: none;
+     display: block;
+     color: #ffffff;
+ }
 
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 5em;
-    position: relative;
-    padding: 1em;
-}
+ ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 5em;
+     position: relative;
+     padding: 1em;
+ }
 
-li {
-    font-family: 'museosans';
-    font-size: 1em;
-    text-decoration: none;
-}
+ li {
+     font-family: 'museosans';
+     font-size: 1em;
+     text-decoration: none;
+ }
 
-footer {
-    font-family: 'museosans';
-    font-size: 1em;
-}
+ footer {
+     font-family: 'museosans';
+     font-size: 1em;
+ }
 
-.onderaan {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2;
-    background-color: #99258d;
-    color: white;
-    text-align: center;
-    font-family: "museosans";
-}
+ .onderaan {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2;
+     background-color: #99258d;
+     color: white;
+     text-align: center;
+     font-family: "museosans";
+ }
 
-h1 {
-    color: white;
-    font-family: 'museosans';
-    font-size: 1.em;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
+ h1 {
+     color: white;
+     font-family: 'museosans';
+     font-size: 1.em;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+ }
 
-li img {
-    height: 5em;
-}
+ li img {
+     height: 5em;
+ }
 
-li:nth-of-type(2) a {
-    margin-left: -1em;
-    color: #99258d;
-    text-transform: lowercase;
-    text-align: center;
-    flex-direction: column;
-    text-decoration: none;
-}
+ li:nth-of-type(2) a {
+     margin-left: -1em;
+     color: #99258d;
+     text-transform: lowercase;
+     text-align: center;
+     flex-direction: column;
+     text-decoration: none;
+ }
 
-li a {
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #99258d;
-}
+ li a {
+     font-size: 1em;
+     display: flex;
+     flex-direction: column;
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #99258d;
+ }
 
-.filterbutton {
-    font-family: 'museosans';
-    border: none;
-    background-color: #99258d;
-    color: white;
-    padding: 0em 2em;
-    font-size: 0.9em;
-    margin-left: 1em;
-}
+ .filterbutton {
+     font-family: 'museosans';
+     border: none;
+     background-color: #99258d;
+     color: white;
+     padding: 0em 2em;
+     font-size: 0.9em;
+     margin-left: 1em;
+     transition: background-color 1s,
+     color 1s 1s;
+ }
 
-.sorteerbutton {
-    border-radius: 20em;
-    background-color: #EFC030;
-    color: #333333;
-    border: none;
-    font-family: 'museosans';
-    padding: 0em 1em;
-    margin-left: 1em;
-    font-size: 0.9em;
-}
+ .filterbutton:hover {
+     color: #99258d;
+     background-color: white;
+ }
 
-button.hover {}
+ /*CODEPEN les 5*/
 
-.aantalresultaten {
-    color: grey;
-    font-family: 'museosans';
-    margin: 1em 1em 1em auto;
-}
+ .sorteerbutton {
+     border-radius: 20em;
+     background-color: #EFC030;
+     color: #333333;
+     border: none;
+     font-family: 'museosans';
+     padding: 0em 1em;
+     margin-left: 1em;
+     font-size: 0.9em;
+ }
 
-.fsr {
-    margin-top: 1em;
-    display: flex;
-}
+ button.hover {}
 
-article {
-    margin-left: .5em;
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
-    margin: 1em;
-    padding: 1em;
-}
+ .aantalresultaten {
+     color: grey;
+     font-family: 'museosans';
+     margin: 1em 1em 1em auto;
+ }
 
-article:nth-of-type(3) {
-    margin-bottom: 3em;
-}
+ .fsr {
+     margin-top: 1em;
+     display: flex;
+ }
 
-article img {
-    width: 100%;
-    width: calc(100% + 2em);
-    margin-left: -1em;
-    margin-top: -1em;
-}
+ article {
+     margin-left: .5em;
+     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+     margin: 1em;
+     padding: 1em;
+ }
 
-p {
-    margin-top: 30px;
-    padding: 1em;
-    font-family: 'museosans', sans-serif;
-}
+ article:nth-of-type(3) {
+     margin-bottom: 3em;
+ }
 
-h2 {
-    font-weight: lighter;
-    font-family: 'museosans';
-    color: #707070;
-    margin: 0.5em 0em;
-    font-size: 2em;
-}
+ article img {
+     width: 100%;
+     width: calc(100% + 2em);
+     margin-left: -1em;
+     margin-top: -1em;
+ }
 
-footer p {
-    margin: 0;
-    padding: 0;
-    font-size: 0.8em;
-    color: #707070;
-}
+ p {
+     margin-top: 30px;
+     padding: 1em;
+     font-family: 'museosans', sans-serif;
+ }
 
-button > a {
-    text-decoration: none;
-    color: white;
-}
+ h2 {
+     font-weight: lighter;
+     font-family: 'museosans';
+     color: #707070;
+     margin: 0.5em 0em;
+     font-size: 2em;
+ }
 
-nav ul li:first-child a:active {
-    color: #99258d;
-    font-weight: bold;
-}
+ footer p {
+     margin: 0;
+     padding: 0;
+     font-size: 0.8em;
+     color: #707070;
+ }
 
-.lees {
-    background-color: #99268C;
-    padding: 1em;
-    font-weight: bold;
-    color: white;
-    font-family: 'museosans';
-    text-align: auto;
-    border-radius: 2em;
-}
+ button > a {
+     text-decoration: none;
+     color: white;
+ }
 
-.sterren {
-    margin-top: -0.5em;
-    width: 15%;
-    padding: 1em;
-    font-family: 'museosans', sans-serif;
-}
+ nav ul li:first-child a:active {
+     color: #99258d;
+     font-weight: bold;
+ }
 
-.downloadknop {
-    background-color: white;
-    width: 6%;
-    margin-left: 0em;
-    border: none;
-}
+ .lees {
+     background-color: #99268C;
+     padding: 1em;
+     font-weight: bold;
+     color: white;
+     font-family: 'museosans';
+     text-align: auto;
+     border-radius: 2em;
+ }
 
-.titel {
-    font-weight: lighter;
-    font-family: 'museosans';
-    color: #707070;
-    margin: 0.5em 0em;
-    font-size: 2em;
-    float: right;
-    text-transform: uppercase;
-    width: 100%;
-    margin-left: 1em;
-}
+ .sterren {
+     margin-top: -0.5em;
+     width: 15%;
+     padding: 1em;
+     font-family: 'museosans', sans-serif;
+ }
 
-.detailpagina {
-    flex-direction: row;
-    font-size: 1em;
-    padding: 0;
-    width: 100%;
+ .downloadknop {
+     background-color: white;
+     width: 6%;
+     margin-left: 0em;
+     border: none;
+ }
 
-}
+ .titel {
+     font-weight: lighter;
+     font-family: 'museosans';
+     color: #707070;
+     margin: 0.5em 0em;
+     font-size: 2em;
+     float: right;
+     text-transform: uppercase;
+     width: 100%;
+     margin-left: 1em;
+ }
 
-.onderaan {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2;
-    background-color: #99258d;
-    color: white;
-    text-align: center;
-    font-family: "museosans";
-}
+ .detailpagina {
+     flex-direction: row;
+     font-size: 1em;
+     padding: 0;
+     width: 100%;
 
-.info {
-    display: flex;
-    flex-direction: row;
-}
+ }
 
-.meta {
-    width: 100%;
-    position: absolute;
-    top: 25%;
-    margin-left: 2.5em;
-    margin-bottom: 2.5em;
-}
+ .onderaan {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2;
+     background-color: #99258d;
+     color: white;
+     text-align: center;
+     font-family: "museosans";
+ }
 
-.downloadedstory {
-    display: flex;
-    width: 130%;
-    height: 165%;
+ .info {
+     display: flex;
+     flex-direction: row;
+ }
 
-}
+ .meta {
+     width: 100%;
+     position: absolute;
+     top: 25%;
+     margin-left: 2.5em;
+     margin-bottom: 2.5em;
+ }
 
-.thumbnailsmall {
-    width: 10em;
-    height: 17%;
-    position: absolute;
-    left: 3em;
-    top: 16.5em;
-    border-bottom-style: solid;
-    border-color: #EFC030;
-}
+ .downloadedstory {
+     display: flex;
+     width: 130%;
+     height: 165%;
 
-.smalltitel {
-    margin-left: 5.5em;
-    text-decoration: underline white;
-}
+ }
 
-.metasmall {
-    position: absolute;
-    top: 49%;
-}
+ .thumbnailsmall {
+     width: 10em;
+     height: 17%;
+     position: absolute;
+     left: 3em;
+     top: 16.5em;
+     border-bottom-style: solid;
+     border-color: #EFC030;
+ }
 
-.leessmall {
-    position: fixed;
-    left: 40%;
-    top: 41%;
-    background-color: white;
-    border: none;
-    margin-left: 20em;
-}
+ .smalltitel {
+     margin-left: 5.5em;
+     text-decoration: underline white;
+ }
 
-.bewerkenbutton {
-    height: 4em;
-    margin-top: 1em
-}
+ .metasmall {
+     position: absolute;
+     top: 49%;
+ }
 
-.sterretjes {
-    position: absolute;
-    top: 4em;
-    left: 1em;
-}
+ .leessmall {
+     position: fixed;
+     left: 40%;
+     top: 41%;
+     background-color: white;
+     border: none;
+     margin-left: 20em;
+ }
 
-.metatitle {
-    font-size: 1.5em;
-}
+ .bewerkenbutton {
+     height: 4em;
+     margin-top: 1em
+ }
 
-.andereverhalen {
-    position: absolute;
-    top: 65%;
-    margin-left: 15em;
-    color: white;
-    font-family: 'museosans';
-}
+ .sterretjes {
+     position: absolute;
+     top: 4em;
+     left: 1em;
+ }
 
-.infoverhaal {
-    position: absolute;
-    left: 1em;
-    top: 12.5em;
-    height: 2em;
-    width: 10em;
-    margin-left: 1em;
-    border-top-style: solid;
-    border-color: #EFC030;
-    box-shadow: none;
-    margin: 1em;
-    padding: 1em;
-}
+ .metatitle {
+     font-size: 1.5em;
+ }
 
-.metaklein {
-    position: absolute;
-    top: 30.5%;
-}
+ .andereverhalen {
+     position: absolute;
+     top: 65%;
+     margin-left: 15em;
+     color: white;
+     font-family: 'museosans';
+ }
 
-.verhaallezen {
-    margin-top: 4em;
-    margin-bottom: 5em;
-}
+ .infoverhaal {
+     position: absolute;
+     left: 1em;
+     top: 12.5em;
+     height: 2em;
+     width: 10em;
+     margin-left: 1em;
+     border-top-style: solid;
+     border-color: #EFC030;
+     box-shadow: none;
+     margin: 1em;
+     padding: 1em;
+ }
 
-.sterren {
-    margin-top: -0.5em;
-    width: 15%;
-    padding: 1em;
-    font-family: 'museosans', sans-serif;
-}
+ .metaklein {
+     position: absolute;
+     top: 30.5%;
+ }
 
-.downloadknop {
-    background-color: white;
-    width: 6%;
-    margin-left: 0em;
-    border: none;
-}
+ .verhaallezen {
+     margin-top: 4em;
+     margin-bottom: 5em;
+ }
 
-.nogeenverhaallezen {
-    margin-left: 15em;
-    position: absolute;
-    top: 425%;
-}
+ .sterren {
+     margin-top: -0.5em;
+     width: 15%;
+     padding: 1em;
+     font-family: 'museosans', sans-serif;
+ }
+
+ .downloadknop {
+     background-color: white;
+     width: 6%;
+     margin-left: 0em;
+     border: none;
+ }
+
+ .nogeenverhaallezen {
+     margin-left: 15em;
+     position: absolute;
+     top: 425%;
+ }
+
+
+ #filterblok {
+     padding: 0.5em;
+     margin: 1em 1em -1em 1em;
+     background-color: #99258d;
+     color: white;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     font-family: 'museosans';
+     max-height: 0;
+     overflow: hidden;
+     padding: 0;
+     transition: 1s cubic-bezier(.39, -0.55, .58, 1.28);
+ }
+
+ @media(min-width:35em) {
+     #filterblok {
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+ }
+
+ @media(min-width:70em) {
+     #filterblok {
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     }
+ }
+
+ /* Bronvermelding: W3C checkbock uitleg */
+
+ #filterblok.show {
+     padding: 0.5em;
+     Border: solid #99258d;
+     max-height: 3em;
+ }

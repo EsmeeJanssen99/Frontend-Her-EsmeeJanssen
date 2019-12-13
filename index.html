@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Wow AIR Verhalen</title>
-    <link rel="stylesheet" href="../_css/mijnstijl.css">
     <link rel="stylesheet" href="_css/stijl.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,7 +17,7 @@
                 <li><a href="inloggen.html">INLOGGEN</a></li>
             </ul>
         </nav>
-         <section>
+        <section>
             <h1>
                 Verhalen voor in het vliegtuig
             </h1>
@@ -24,49 +25,98 @@
     </header>
 
     <div class="fsr">
-        <button class="filterbutton" type="button" data-toggle="dropdown">FILTER</button>
+        <button id="filterbutton" onclick="filterShow" class="filterbutton" type="button" data-toggle="dropdown">FILTER</button>
         <button class="sorteerbutton" type="button" data-toggle="dropdown">SORTEREN</button>
         <span class="aantalresultaten">99 resultaten</span>
     </div>
-<section></section>
 
-        <main class="grid-container">
+    <form id=filterblok action="FilterenGenres">
+        <label class="container">
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+              Enthaussiast
+        </label>
 
-            <article>
-                <img src="_img/alzheimer%20afbeelding%20%20.png" alt='verhaal Alzheimer'>
-                <h2>Alzheimer</h2>
-                <footer>
-                    <p>Vergeetachtig</p>
-                    <p>12 april 2018</p>
-                    <img src="_img/stars.svg" alt="sterretjes" class="sterren">
-                    <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
-                </footer>
-                <button class="lees">Lees het verhaal</button>
-            </article>
+        <label class="container">
+              <input type="checkbox">
+                <span class="checkmark"></span>
+                Romans
+        </label>
 
-            <article>
-                <img src="_img/m%20uitgewerkt%20copy.jpg" alt='verhaal Martin Bril'>
-                <h2>Martin Bril</h2>
-                <footer>
-                    <p>Treurig</p>
-                    <p>7 januari 2018</p>
-                    <img src="_img/stars.svg" alt="sterretjes" class="sterren">
-                    <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
-                </footer>
-                <button class="lees"> <a href="verhaal.html">Lees het verhaal</a></button>
-            </article>
+        <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              Treurig
+        </label>
 
-            <article>
-                <img src="_img/Onomatopee%20jasper%20koenen%20copy.jpg" alt='verhaal Onomatopee'>
-                <h2>Onomatopee</h2>
-                <footer>
-                    <p>Chaotisch</p>
-                    <p>25 Mei 2018</p>
-                    <img src="_img/stars.svg" alt="sterretjes" class="sterren">
-                    <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
-                </footer>
-                <button class="lees">Lees het verhaal</button>
-            </article>
+        <label class="container">
+             <input type="checkbox">
+              <span class="checkmark"></span>
+              Kinderlijk
+        </label>
+
+        <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+             Spanning
+        </label>
+
+        <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              Vrolijk
+        </label>
+
+        <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+             Poëzie
+        </label>
+
+        <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              Thriller
+        </label>
+    </form>
+
+    <main class="grid-container">
+
+        <article>
+            <img src="_img/alzheimer%20afbeelding%20%20.png" alt='verhaal Alzheimer'>
+            <h2>Alzheimer</h2>
+            <footer>
+                <p>Vergeetachtig</p>
+                <p>12 april 2018</p>
+                <img src="_img/stars.svg" alt="sterretjes" class="sterren">
+                <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
+            </footer>
+            <button class="lees">Lees het verhaal</button>
+        </article>
+
+        <article>
+            <img src="_img/m%20uitgewerkt%20copy.jpg" alt='verhaal Martin Bril'>
+            <h2>Martin Bril</h2>
+            <footer>
+                <p>Treurig</p>
+                <p>7 januari 2018</p>
+                <img src="_img/stars.svg" alt="sterretjes" class="sterren">
+                <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
+            </footer>
+            <button class="lees"> <a href="verhaal.html">Lees het verhaal</a></button>
+        </article>
+
+        <article>
+            <img src="_img/Onomatopee%20jasper%20koenen%20copy.jpg" alt='verhaal Onomatopee'>
+            <h2>Onomatopee</h2>
+            <footer>
+                <p>Chaotisch</p>
+                <p>25 Mei 2018</p>
+                <img src="_img/stars.svg" alt="sterretjes" class="sterren">
+                <button class="downloadknop"> <a href="downloads.html"><img src="_img/gedownload.png" alt='downloadicoon'></a></button>
+            </footer>
+            <button class="lees">Lees het verhaal</button>
+        </article>
     </main>
 
 
@@ -75,4 +125,5 @@
     </footer>
     <script src='_js/script.js'></script>
 </body>
+
 </html>
