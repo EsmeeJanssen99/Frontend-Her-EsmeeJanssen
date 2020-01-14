@@ -31,6 +31,8 @@
      height: 2em;
  }
 
+
+
  nav {
      list-style-type: none;
      display: block;
@@ -79,6 +81,12 @@
      margin: auto;
      display: flex;
      justify-content: space-around;
+ }
+
+h1:hover {
+     color: darkgoldenrod;
+    font-size: 2em;
+     transition: 1s cubic-bezier(.6, -2, .2, 1.28);
  }
 
  li img {
@@ -150,6 +158,11 @@
      margin: 1em 1em 1em auto;
  }
 
+ .aantalresultaten:hover {
+     margin-right: 3em;
+     transition: 1s cubic-bezier(.6, -2, .1, 1.28);
+ }
+
  .fsr {
      margin-top: 1em;
      display: flex;
@@ -206,6 +219,11 @@
      font-weight: bold;
  }
 
+ nav ul li:hover {
+     transform: rotate(-1800deg);
+     transition: 6s;
+ }
+
  .lees {
      background-color: #99268C;
      padding: 1em;
@@ -215,6 +233,8 @@
      text-align: auto;
      border-radius: 2em;
      margin: 0;
+     text-decoration: none;
+     font-size: 0.7em;
  }
 
  .sterren {
@@ -222,13 +242,6 @@
      width: 15%;
      padding: 1em;
      font-family: 'museosans', sans-serif;
- }
-
- .downloadknop {
-     background-color: white;
-     margin-left: 0em;
-     border: none;
-     width: 2.5em;
  }
 
  .titel {
@@ -285,7 +298,7 @@
  .thumbnailsmall {
      left: 3em;
      top: 16.5em;
-     width:10em;
+     width: 10em;
      height: 10em;
      border-bottom-style: solid;
      border-color: #EFC030;
@@ -350,8 +363,8 @@
  }
 
  .verhaallezen {
-     margin-top: 4em;
-     margin-bottom: 5em;
+     margin-top: 7em;
+     margin-bottom: 3em;
  }
 
  .sterren {
@@ -365,12 +378,21 @@
      background-color: white;
      margin-left: 0em;
      border: none;
+     width: 2.5em;
+     height: 2.5em;
  }
 
  .nogeenverhaallezen {
-     margin-left: 15em;
-     position: absolute;
-     top: 425%;
+     background-color: #99268C;
+     padding: 1em;
+     font-weight: bold;
+     color: white;
+     font-family: 'museosans';
+     border-radius: 2em;
+     text-decoration: none;
+     justify-content: space-around;
+     display: flex;
+     width: 12em;
  }
 
 
@@ -387,6 +409,8 @@
      padding: 0;
      transition: 1s cubic-bezier(.39, -0.55, .58, 1.28);
  }
+
+ /*Cubic-bezier van de code van coop en de site Cubic-bezier.com*/
 
  @media(min-width:35em) {
      #filterblok {
@@ -415,41 +439,41 @@
      justify-content: space-between;
  }
 
-.heleform {
-    color: white;
-    background-color: #99268C;
-    border-radius: 2em;
-    font-family: 'museosans';
-    width: 85%;
-    margin: 2em auto;
-}
+ .heleform {
+     color: white;
+     background-color: #99268C;
+     border-radius: 2em;
+     font-family: 'museosans';
+     width: 85%;
+     margin: 2em auto;
+ }
 
-.aanmeldveld {
+ .aanmeldveld {
      border: none;
-}
+     margin: 1em;
+ }
 
-legend {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+ legend {
+     padding-top: 1em;
+     padding-bottom: 1em;
+ }
 
-.buttons {
-    position: absolute;
-    top: 65%;
-    margin-left: 9.3em;
-    color: white;
-    background-color: #99268c;
-    font-family: 'museosans';
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: -3em;
-    border: solid;
-    padding: 1em;
-    border-radius: 2em;
-}
+ .buttons {
+     position: absolute;
+     top: 65%;
+     margin-left: 9.3em;
+     color: white;
+     background-color: #99268c;
+     font-family: 'museosans';
+     text-decoration: none;
+     font-size: 1.2em;
+     margin-top: -3em;
+     border: solid;
+     padding: 1em;
+     border-radius: 2em;
+ }
 
-
-
-.def {
-
-}
+ .leessmall:hover {
+     transform: rotate(-1800deg);
+     transition: 6s;
+ }
